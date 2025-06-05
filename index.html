@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>艺术绘画天地</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">艺术绘画天地</div>
+            <div class="search-container">
+                <form class="search-form" onsubmit="handleSearch(event)">
+                    <input type="search" placeholder="搜索课程、作品、活动..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="search-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#gallery">精选作品</a></li>
+                <li><a href="#history">发展历程</a></li>
+                <li><a href="#news-section">新闻动态</a></li>
+                <li><a href="#courses">艺术课程</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slide1.jpg" alt="油画作品">
+                        <div class="slide-content">
+                            <h2>探索艺术的魅力</h2>
+                            <p>让我们一起开启绘画的奇妙之旅</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.jpg" alt="水彩画作品">
+                        <div class="slide-content">
+                            <h2>激发创作灵感</h2>
+                            <p>在这里找到属于你的艺术表达方式</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide3.jpg" alt="素描作品">
+                        <div class="slide-content">
+                            <h2>专业的艺术指导</h2>
+                            <p>让每一笔都充满自信</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- 艺术介绍区域 -->
+        <section class="art-intro">
+            <div class="description">
+                欢迎来到我们的艺术绘画世界！这里是一个充满创意和激情的艺术殿堂，我们致力于为每一位热爱艺术的朋友提供一个展示才华的舞台。在这里，<span class="highlight">传统与现代交融</span>，<span class="highlight">东方与西方碰撞</span>，激发出无限的艺术火花。
+                <br><br>
+                我们提供专业的艺术指导、丰富的创作资源，以及广阔的交流平台。无论您是初学者还是专业艺术家，都能在这里找到适合自己的发展空间。让我们一起探索艺术的奥秘，创造属于自己的精彩作品！
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>精选作品展示</h2>
+            <div class="gallery-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery1.jpg" alt="水彩风景">
+                            <div class="overlay">
+                                <h3>水彩风景</h3>
+                                <p>清新自然的水彩技法展现春日风光</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery2.jpg" alt="油画静物">
+                            <div class="overlay">
+                                <h3>油画静物</h3>
+                                <p>细腻笔触描绘生活中的美好时刻</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery3.jpg" alt="人物素描">
+                            <div class="overlay">
+                                <h3>人物素描</h3>
+                                <p>精准的线条勾勒人物神韵</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery4.jpg" alt="抽象艺术">
+                            <div class="overlay">
+                                <h3>抽象艺术</h3>
+                                <p>现代艺术的自由表达与创新</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery5.jpg" alt="风景写生">
+                            <div class="overlay">
+                                <h3>风景写生</h3>
+                                <p>户外写生捕捉自然之美</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="images/gallery6.jpg" alt="现代水墨">
+                            <div class="overlay">
+                                <h3>现代水墨</h3>
+                                <p>传统与现代的完美融合</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next gallery-next"></div>
+                <div class="swiper-button-prev gallery-prev"></div>
+                <div class="swiper-pagination gallery-pagination"></div>
+            </div>
+        </section>
+
+        <!-- 历史介绍版块 -->
+        <section id="history" class="history-section">
+            <div class="history-container">
+                <div class="history-content">
+                    <h2 class="history-title">我们的故事</h2>
+                    <p class="history-text">
+                        艺术绘画天地创立于2020年，坐落于城市文化艺术区的中心地带。这里曾是一座百年老厂房，经过精心改造，现已成为一个充满艺术气息的创意空间。周边环绕着艺术博物馆、画廊、咖啡馆等文化场所，形成了一个独特的艺术生态圈。
+                    </p>
+                    <p class="history-text">
+                        五年来，我们不断发展壮大，从最初的小型画室发展成为集教学、展览、交流于一体的综合艺术中心。我们的教学区配备专业的采光设施，宽敞的创作空间，以及丰富的艺术材料库。展览厅则采用现代化的展陈系统，为艺术家们提供理想的作品展示平台。
+                    </p>
+                    <p class="history-text">
+                        在这里，我们聚集了来自全国各地的优秀艺术教师，他们既有深厚的专业功底，又有丰富的教学经验。我们开设了从基础到高级的各类课程，满足不同层次学员的需求。同时，我们还定期举办艺术讲座、工作坊和展览，为艺术爱好者们提供交流和展示的机会。
+                    </p>
+                    <div class="history-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">培养学员</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">专业导师</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">成功展览</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-image">
+                    <img src="images/history.jpg" alt="艺术中心外观">
+                    <div class="image-caption">
+                        <div class="location">艺术绘画天地创意园区</div>
+                        <div class="date">摄于2023年秋季，改造后的百年老厂房展现出独特的艺术气息，见证了我们的成长历程</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news-section" class="section">
+            <div class="news-container">
+                <div class="news-slider">
+                    <div class="news-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/news1.jpg" alt="艺术展览">
+                                <div class="news-slide-caption">
+                                    <h3>年度艺术展览</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/news2.jpg" alt="艺术讲座">
+                                <div class="news-slide-caption">
+                                    <h3>大师讲座系列</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/news3.jpg" alt="工作坊">
+                                <div class="news-slide-caption">
+                                    <h3>创作工作坊</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="news-list">
+                    <div class="news-list-header">
+                        <h2>最新消息</h2>
+                        <a href="#" class="more-btn">
+                            <span>更多</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="news-items">
+                        <li class="news-item">
+                            <span class="news-date">2025-03-20</span>
+                            <p class="news-title">春季艺术展览即将开幕，诚邀各位艺术爱好者参与</p>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2025-03-18</span>
+                            <p class="news-title">著名水彩画家王大师工作坊报名开始</p>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2025-03-15</span>
+                            <p class="news-title">青少年绘画比赛圆满结束，获奖名单公布</p>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2025-03-12</span>
+                            <p class="news-title">新学期课程安排已更新，欢迎查看详情</p>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-date">2025-03-10</span>
+                            <p class="news-title">艺术沙龙活动预告：探讨现代艺术的发展趋势</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="section">
+            <h2>热门课程</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="images/course1.jpg" alt="基础素描课程">
+                    <h3>基础素描入门</h3>
+                    <p>掌握绘画基本技巧，建立造型能力</p>
+                    <button class="btn">了解更多</button>
+                </div>
+                <div class="course-card">
+                    <img src="images/course2.jpg" alt="水彩技法课程">
+                    <h3>水彩画技法</h3>
+                    <p>探索水彩的魅力，感受色彩的流动</p>
+                    <button class="btn">了解更多</button>
+                </div>
+                <div class="course-card">
+                    <img src="images/course3.jpg" alt="油画创作课程">
+                    <h3>油画创作</h3>
+                    <p>专业油画技法，释放艺术潜能</p>
+                    <button class="btn">了解更多</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>电话：123-456-7890</p>
+                <p>邮箱：info@artgallery.com</p>
+                <p>地址：艺术大道123号</p>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">微信</a>
+                    <a href="#" class="social-link">微博</a>
+                    <a href="#" class="social-link">抖音</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 艺术绘画天地. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 弹窗 -->
+    <div class="modal" id="noticeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>温馨提示</h3>
+                <button class="close-button" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <p>此网页是一份作业，所展示内容请勿当真！！</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
